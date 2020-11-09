@@ -1,0 +1,23 @@
+{
+  "name": "officelite-coming-soon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emrikcah/officelite-coming-soon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emrikcah/officelite-coming-soon/issues"
+  },
+  "homepage": "https://github.com/Emrikcah/officelite-coming-soon#readme",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
