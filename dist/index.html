@@ -1,53 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Officelite coming soon site</title>
-</head>
-<body> 
-  A simple solution to complex tasks is coming soon
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+      <!-- Google fonts -->
+      <link
+         href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+         rel="stylesheet"
+      />
+      <!-- My styles -->
+      <link rel="stylesheet" href="css/main.css" />
 
-  Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new 
-  collaboration platform built with an intuitive interface to improve productivity.
+      <title>Frontend Mentor | Officelite coming soon site</title>
+   </head>
+   <body>
+      <!-- Background top -->
+      <div class="body__bg--top"></div>
+      <!-- Container -->
+      <div class="container">
+         <!-- Header -->
+         <header class="header">
+            <a href=""
+               ><img src="assets/shared/logo.svg" class="header__logo" alt="Officelite"
+            /></a>
+            <section class="header__hero">
+               <div class="header__content">
+                  <h1 class="header__hero-title">
+                     A simple solution to complex tasks is coming soon
+                  </h1>
 
-  Get Started
+                  <p class="header__hero-body">
+                     Say goodbye to inefficient juggling of multiple apps, teams, and projects.
+                     Officelite is the new collaboration platform built with an intuitive interface
+                     to improve productivity.
+                  </p>
 
-  Basic
-  Free
-  Up to 5 users for free
-  Basic document collaboration
-  2 gb storage
-  Great security and support
-  Try for Free
+                  <a href="" class="btn__box-shadow btn--primary">Get Started</a>
+               </div>
+               <div class="header__media">
+                  <img
+                     src="assets/home/illustration-charts.svg"
+                     class="desktop-chart"
+                     alt="charts"
+                  />
+               </div>
+            </section>
+         </header>
+         <!-- Header end -->
+         <!-- Main -->
+         <main class="main">
+            <div class="main__container">
+               <!-- Basic -->
+               <div class="main__card card__box-shadow">
+                  <div class="main__tablet-container">
+                     <h3 class="main__card-type">Basic</h3>
+                     <h2 class="main__card-price">Free</h2>
+                     <p class="main__card-users">Up to 5 users for free</p>
+                  </div>
+                  <div class="main__card-features">
+                     <ul>
+                        <li class="main__card-feature">Basic document collaboration</li>
+                        <li class="main__card-feature">2 GB storage</li>
+                        <li class="main__card-feature">Great security and support</li>
+                     </ul>
+                  </div>
+                  <a href="/sign-up.html" class="main__card-button btn btn--secondary">
+                     Try for Free
+                  </a>
+               </div>
+               <!-- Pro -->
+               <div class="main__card main__card--blue">
+                  <div class="main__tablet-container blue">
+                     <h3 class="main__card-type main__card-type--blue">Pro</h3>
+                     <h2 class="main__card-price main__card-price--blue">$9.99</h2>
+                     <p class="main__card-users">Per user, billed monthly</p>
+                  </div>
+                  <div class="main__card-features main__card-features--blue">
+                     <ul>
+                        <li class="main__card-feature">All essential integrations</li>
+                        <li class="main__card-feature">50 GB storage</li>
+                        <li class="main__card-feature">More control and insights</li>
+                     </ul>
+                  </div>
+                  <a href="/sign-up.html" class="main__card-button btn btn--pro">
+                     Try for Free
+                  </a>
+               </div>
+               <!-- Ultimate -->
+               <div class="main__card">
+                  <div class="main__tablet-container">
+                     <h3 class="main__card-type">Ultimate</h3>
+                     <h2 class="main__card-price">$19.99</h2>
+                     <p class="main__card-users">Per user, billed monthly</p>
+                  </div>
+                  <div class="main__card-features">
+                     <ul>
+                        <li class="main__card-feature">Robust work management</li>
+                        <li class="main__card-feature">100 GB storage</li>
+                        <li class="main__card-feature">VIP support</li>
+                     </ul>
+                  </div>
+                  <a href="/sign-up.html" class="main__card-button btn btn--secondary">
+                     Try for Free
+                  </a>
+               </div>
+            </div>
+         </main>
+         <!-- Main end -->
+         <!-- Footer -->
+         <footer class="footer">
+            <div class="footer__box">
+               <h3 class="footer__date">
+                  COMING
+                  <span id="coming-soon" class="footer__date footer__date--blue">4 NOV 2020</span>
+               </h3>
+               <!-- footer countdown container displayed in grid 4, 1fr -->
+               <div class="footer__countdown">
+                  <div class="footer__countdown-item">
+                     <h2 class="footer__countdown-amount days">47</h2>
+                     <p class="footer__countdown-type">days</p>
+                  </div>
+                  <div class="footer__countdown-item">
+                     <h2 class="footer__countdown-amount hours">07</h2>
+                     <p class="footer__countdown-type">hours</p>
+                  </div>
+                  <div class="footer__countdown-item">
+                     <h2 class="footer__countdown-amount minutes">56</h2>
+                     <p class="footer__countdown-type">min</p>
+                  </div>
+                  <div class="footer__countdown-item">
+                     <h2 class="footer__countdown-amount seconds">14</h2>
+                     <p class="footer__countdown-type">sec</p>
+                  </div>
+               </div>
+            </div>
+            <a href="/sign-up.html" class="footer__btn  btn--primary"> Get Started </a>
+         </footer>
+         <!-- Footer end -->
+      </div>
+      <!-- Container end -->
 
-  Pro
-  $9.99
-  Per user, billed monthly
-  All essential integrations
-  50 gb storage
-  More control and insights
-  Try for Free
+      <!-- Background bottom -->
+      <div class="body__bg--bottom"></div>
 
-  Ultimate
-  $19.99
-  Per user, billed monthly
-  Robust work management
-  100 gb storage
-  VIP support
-  Try for Free
-
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
-
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-  Get Started
-</body>
+      <script src="js/app.js"></script>
+   </body>
 </html>

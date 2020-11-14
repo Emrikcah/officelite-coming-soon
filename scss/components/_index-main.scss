@@ -1,0 +1,51 @@
+.main {
+   margin-bottom: 10rem;
+   .main__card {
+      &.card__box-shadow {
+         box-shadow: $card-box-shadow;
+      }
+      border-radius: 0.9rem;
+      text-align: center;
+      margin: 0 auto 2rem;
+      padding: 5rem 3rem;
+      max-width: 327px;
+      background-color: $white;
+
+      &--blue {
+         color: $white;
+         background-color: $dodger-blue;
+      }
+   }
+
+   .main__tablet-container {
+      color: $oxford-blue;
+      margin-bottom: 4rem;
+   }
+
+   .main__tablet-container.blue {
+      color: $white;
+   }
+
+   .main__card-type {
+      margin-bottom: 5rem;
+      font-size: 2rem;
+   }
+
+   .main__card-price {
+      font-size: 5.6rem;
+   }
+
+   .main__card-users {
+      font-size: 1.6rem;
+      
+   }
+
+   .main__card-features {
+      font-size: 1.6rem;
+      line-height: 3.5;
+   }
+
+   .main__card-button {
+      margin-top: 2rem;
+   }
+}

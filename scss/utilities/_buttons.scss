@@ -1,0 +1,32 @@
+%btn {
+   display: inline-block;
+   border-radius: 3rem;
+   padding: 2rem 5.5rem;
+   text-decoration: none;
+   font-size: 1.5rem;
+}
+
+.btn__box-shadow {
+   box-shadow: 0px 25px 25px #3f5bc23f;
+}
+
+.btn--primary {
+   @extend %btn;
+   background-color: $dodger-blue;
+   color: #fff;
+
+   &:hover {
+      background-color: lighten($dodger-blue, 5%);
+   }
+}
+
+.btn--secondary {
+   @extend %btn;
+   background-color: lighten($malibu, 23%);
+   color: $malibu;
+}
+.btn--pro {
+   @extend %btn;
+   background-color: $white;
+   color: $malibu;
+}
