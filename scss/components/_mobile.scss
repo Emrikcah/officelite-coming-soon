@@ -35,20 +35,23 @@
 .main {
    margin-bottom: 10rem;
    .main__card {
-      &.card__box-shadow {
-         box-shadow: $card-box-shadow;
-      }
       border-radius: 0.9rem;
       text-align: center;
       margin: 0 auto 2rem;
-      padding: 5rem 3rem;
+      padding: 4rem 3rem;
       max-width: 327px;
       background-color: $white;
+      
+      &.card__box-shadow {
+         box-shadow: $card-box-shadow;
+      }
 
       &--blue {
          color: $white;
          background: url("../assets/home/bg-pattern-pricing.svg");
          background-color: $dodger-blue;
+         background-position: center 100%;
+         background-repeat: no-repeat;
       }
    }
 
@@ -76,7 +79,10 @@
 
    .main__card-features {
       font-size: 1.6rem;
-      line-height: 3.5;
+   }
+
+   .main__card-feature:not(:last-child) {
+      margin-bottom: 3.9rem;
    }
 
    .main__card-button {
