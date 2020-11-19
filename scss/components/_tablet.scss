@@ -29,6 +29,8 @@
             z-index: -1;
          }
       }
+
+     
    }
    //Header end
    // Main
@@ -68,6 +70,21 @@
 
       .main__card-button {
          margin-top: 0;
+      }
+
+      &--signup{
+         .header__hero{
+           .header__content{
+              margin: 0 auto;
+              width: 57.2rem;
+           }
+
+           &-title{
+              font-size: 4rem;
+              margin-bottom: 1.9rem;
+           }
+            
+         }
       }
    }
    // Main end

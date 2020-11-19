@@ -1,0 +1,62 @@
+option{
+   font-weight: $bold;
+   font-size: 1.6rem;
+   line-height: 2.8rem;
+}
+
+// input::placeholder{
+//    color: $waterloo
+// }
+
+input,select{
+   width: 100%;
+   font-family: "Kumbh Sans", sans-serif;
+
+}
+
+input,select{
+   // min-width: 200px;
+   position: relative;
+   border: none;
+   border-bottom: 1px solid $waterloo;
+   padding-left: 1.6rem;
+   padding-bottom: 2.4rem;
+  font-size: 1.6rem;
+   opacity: 0.6;
+}
+
+.main__form{
+   border-radius: 1.3rem;
+   padding: 2.4rem;
+   margin: 0 auto;
+   width: 32.7rem;
+   height: 46.5rem;
+   background-color: $white;
+   box-shadow: $card-box-shadow;
+   
+
+   .form-control{
+      margin-bottom: 2.4rem;
+   }
+
+   .main__btn{
+      font-family: inherit;
+   }
+
+   @media(min-width: 768px){
+      width: 44.5rem;
+      height: 50.8rem;
+      padding: 4rem 4.2rem 5.1rem 4.3rem;
+
+      .remove-margin{
+         margin-bottom: 0;
+      }
+
+      .main__btn{
+         margin-top: 4rem;
+         width: 100%;
+      }
+   }
+
+   
+}

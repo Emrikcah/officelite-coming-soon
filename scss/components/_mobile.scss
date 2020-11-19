@@ -29,6 +29,10 @@
          width: 15.1rem;
       }
    }
+
+   &--signup{
+      margin-bottom: 0;
+   }
 }
 
 // Main
@@ -88,6 +92,10 @@
    .main__card-button {
       margin-top: 2rem;
    }
+
+   &--signup{
+      text-align: center;
+   }
 }
 // Main end
 
@@ -130,6 +138,27 @@
       .footer__countdown-type {
          font-size: 1.2rem;
          opacity: 0.5;
+      }
+   }
+
+   &--signup{
+
+      .footer__box{
+         .footer__date:not(.footer__date--blue){
+            color: $ebony-clay;
+         }
+
+         .footer__countdown-item{
+            background-color: $bg-color-timer;
+         }
+
+         .footer__countdown-amount{
+            color: $dodger-blue;
+         }
+
+         .footer__countdown-type{
+            color: $ebony-clay;
+         }
       }
    }
 }

@@ -26,6 +26,13 @@
             display: block;
          }
       }
+
+      &--signup{
+
+         .header__logo{
+            margin-bottom: 15.4rem;
+         }
+      }
    }
    //Header end
 
@@ -56,6 +63,36 @@
 
       .main__card-button {
          margin-top: 2rem;
+      }
+
+      &--signup {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+
+         .header__hero {
+            grid-row-start: 1;
+            grid-column-start: 1;
+
+            .header__content {
+               text-align: left;
+
+               .header__hero-title {
+                  font-size: 5.6rem;
+               }
+            }
+         }
+
+         .footer {
+            align-self: end;
+            grid-row-start: 1;
+            grid-column-start: 1;
+            margin-bottom: 1.7rem;
+         }
+
+         .main__form {
+            grid-row-start: 1;
+            grid-column-start: 2;
+         }
       }
    }
    //Main end
