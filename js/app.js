@@ -33,7 +33,7 @@ const minutes = date.getMinutes();
 const seconds = date.getSeconds();
 const span = document.querySelector("[data-date]");
 
-const  showDate = `${date.getDate()},${months[month]}, ${date.getFullYear()}`;
+const  showDate = `${months[month]} ${date.getDate()}, ${date.getFullYear()}`;
 
 
 span.innerHTML = showDate;
