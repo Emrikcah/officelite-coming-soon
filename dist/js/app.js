@@ -23,17 +23,21 @@ const days = [
    'Saturday',
 ]
 
-const date = new Date();
+//set date to 30 days into the future
+const today = new Date();
+const futureDate = new Date(today);
+futureDate.setDate(futureDate.getDate() + 30) ;
 
 
-const month = date.getMonth();
-const day = date.getDay();
-const hours = date.getHours();
-const minutes = date.getMinutes();
-const seconds = date.getSeconds();
+
+const month = futureDate.getMonth();
+const day = futureDate.getDay();
+const hours = futureDate.getHours();
+const minutes = futureDate.getMinutes();
+const seconds = futureDate.getSeconds();
 const span = document.querySelector("[data-date]");
 
-const  showDate = `${months[month]} ${date.getDate()}, ${date.getFullYear()}`;
+const  showDate = `${months[month]} ${futureDate.getDate()}, ${futureDate.getFullYear()}`;
 
 
 span.innerHTML = showDate;
